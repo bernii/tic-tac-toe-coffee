@@ -1,11 +1,11 @@
 tic-tac-toe coffee(script)
 ==========================
 
-Tic Tac Toe game with NegaMax visualization implemented with CofeeScript.
+Tic Tac Toe game with NegaMax visualization implemented with CofeeScript. You can play the game and check out the NegaMax graph here http://bernii.github.com/tic-tac-toe-coffee/
 
 Description
 -----------
-Not here yet ;-)
+Not ready yet ;-)
 
 
 Testing ![Continuous Integration status](https://secure.travis-ci.org/bernii/tic-tac-toe-coffee.png)
