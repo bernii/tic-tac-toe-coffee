@@ -1,0 +1,27 @@
+{
+  "name": "tic-tac-toe-coffe",
+  "version": "0.1.0",
+  "description": "Simple Tic Tac Toe game (in CoffeeScript)",
+  "keywords": [
+    "negamax",
+    "tic tac toe",
+    "game"
+  ],
+  "author": "Bernard Kobos <berni+tictac@extensa.pl> (http://www.extensa.pl/)",
+  "main": "lib/main.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bernii/tic-tac-toe-coffee.git"
+  },
+  "scripts": {
+    "test": "node node_modules/tad/bin/tad lib/main.js"
+  },
+  "dependencies": {
+    "tad": "git://github.com/medikoo/tad.git"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">=0.6.6"
+  }
+}

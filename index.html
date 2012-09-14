@@ -1,1 +1,79 @@
-GitHub Page
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Tic Tac Toe with Visualization</title>
+        <meta name="description" content="Simple Tic Tac Toe game with NegaMax visualization. Created with CoffeeScript by Bernard Kobos">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/avgrund.css">
+    </head>
+    <body>
+    	<article class="avgrund-contents">
+    	<header>
+    		<h1>Tic Tac Toe<span>.coffee</span></h1>
+    		<p class="big">
+    			Welcome to the simple game of Tic Tac Toe.<br/>
+    			It was created as a little excercise with AI algorithms (<a href="http://en.wikipedia.org/wiki/Negamax">Negamax</a>) and dynamic programming. Two of <a href="http://hakim.se">Hakims'</a> cool visual experiments were used for fun stuff in the UI.
+    		</p>
+    		<p>
+    			If you want the computer to start first use the <b>Computer start</b> button, otherwise just make your move. You can change the game difficutly with the <b>Computer AI</b> setting. Below the board you can see the visualization of the tree that is analyzed by Negamax (when it is selected) that allows the computer to beat you ;-). Have fun!
+    		</p>
+    	</header>
+    	<section class="tictactoe">
+    		<div class="options">
+    			<button id="computer-start" type="submit" class="btn btn-yellow">
+    				<i class="icon-play"></i> Computer start
+    			</button>
+    			<button id="restart" type="submit" class="btn disabled restart" disabled="disabled">
+    				<i class="icon-remove icon-white"></i> Restart
+    			</button>
+    			<div class="spacer"></div>
+    			<label class="control-label" for="ai-type">Computer AI</label>
+    			<select id="ai-type" name="algorithm">
+				  <option value="negamax">Terminator</option>
+				  <option value="random">Dumb</option>
+  				</select>
+    		</div>
+    		<canvas id="tictactoe" width=200 height=200></canvas>
+    	</section>
+    	<section class="graph-container">
+    		<div id="sig"></div>
+    	</section>
+
+
+    	<footer>
+    		<a href="http://www.linkedin.com/profile/view?id=9716939" alt="Bernard Kobos Berni, image"><img class="author" width="57" height="57" src="http://www.gravatar.com/avatar/429e77b5fd1904a032be360339e0bf74"></a>
+    		<p class="copyrights">
+    			Copyright <a href="http://www.linkedin.com/profile/view?id=9716939">Bernard Kobos</a>, generally speaking no rights are reserved. If you have some questions or suggestions use the <a href="http://github.com/bernii/tic-tac-toe-coffee/issues">issue tracker</a> or <a href="mailto:berni+tictac@extensa.pl">mail me</a> directly. View <a href="http://github.com/bernii/tic-tac-toe-coffee/blob/gh-pages/LICENSE">license</a>
+    		</p>
+    		<a class="github" href="http://github.com">Hosted on GitHub</a>
+    	</footer>
+    	</article>
+
+    	<div class="avgrund-cover"></div>
+
+		<aside class="avgrund-popup">
+			<h2>That's all, folks</h2>
+			<p>
+				You can hit ESC or click outside to close the modal. Give it a go to see the reverse transition.
+			</p>
+			<p>
+				Blah blah blah... whateva!
+			</p>
+			<button id="btn-close" class="btn">Close</button>
+			<button id="btn-restart" class="btn">Restart</button>
+		</aside>
+
+    	<a class="forkit" data-text="Fork me on GitHub" data-text-detached="Click me" href="http://github.com/bernii/tic-tac-toe-coffee"></a>
+
+    	<script src="lib/avgrund.js"></script>
+		<script src="lib/forkit.js"></script>
+        <script src="lib/sigma.min.js"></script>
+        <script src="lib/main.js"></script>
+        <script>
+        main.init();
+        </script>
+    </body>
+</html>

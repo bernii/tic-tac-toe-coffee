@@ -1,0 +1,207 @@
+body{
+  padding: 0; margin: 0; border-top: 5px solid #ffe400;
+  background-color: #55524A; overflow-x: hidden;
+  position: relative;
+}
+.tictactoe{ text-align: center;
+  margin: 60px 0 20px 0;
+}
+#tictactoe{
+  display: inline-block;
+  z-index: 10;
+  position: relative;
+  cursor: pointer;
+}
+header{
+  text-align: center;
+}
+header h1{
+  margin: 60px 0 10px;
+  font-size: 60px;
+  font-weight: 200;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+header h1 span{
+  font-size: 0.4em;
+}
+header p.big{ 
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+}
+header p{
+  color: #D3C7B8; width: 60%; display: inline-block;
+  font-size: 0.9em; line-height: 1.3em;
+}
+#sig{
+  width:90%; height:300px;
+  background-color: black; margin: 0 auto;
+}
+.graph-container{
+  background-color: black; width: 100%;
+  padding: 10px 0 5px 0;
+}
+.options{
+  position: absolute;
+  left: 50%;
+  padding-left: 140px;
+}
+.options label{
+  float: left; clear: both;
+  line-height: 31px;
+  color: #EEECD0;
+}
+.options select{
+  width: 150px;
+  margin-left: 10px;
+}
+.spacer{
+  margin-bottom: 20px;
+}
+footer{
+  margin: 30px 5% 20px 5%;
+  border-top: 1px solid rgb(179, 170, 142);
+  text-align: center;
+  position: relative;
+}
+footer img{
+  position: absolute; left:0; 
+  top: 10px;
+
+  filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter:sepia(1);
+
+  -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out;
+  background-color: #7B47B4;
+}
+footer img:hover{
+  -webkit-filter:sepia(0);
+}
+footer p{
+  color: #888860; display: inline-block;
+  font-size: 0.8em;
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+}
+footer p a {
+  border-bottom: 1px dotted #CED363; 
+  color: #919161;
+  text-decoration: none;
+}
+footer p a:hover{
+  color: white; text-decoration: none;
+}
+/*** Hakim's ForkIt ***/
+
+.forkit {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 200px;
+  height: 150px;
+
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+  .forkit .tag {
+    display: block;
+    height: 30px;
+    width: 200px;
+    text-decoration: none;
+
+    color: #797770;
+    background: #ffe400;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+    box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.4 );
+
+    -webkit-transform-origin: 15px 0px;
+       -moz-transform-origin: 15px 0px;
+        -ms-transform-origin: 15px 0px;
+         -o-transform-origin: 15px 0px;
+            transform-origin: 15px 0px;
+  }
+  .forkit .tag:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 196px;
+    height: 26px;
+    margin: 1px;
+    border: 1px solid rgba( 255, 255, 255, 0.4 );
+  }
+  .forkit .string {
+    display: block;
+    height: 1px;
+    width: 0px;
+    position: absolute;
+
+    background: rgba( 255, 255, 255, 0.7 );
+    box-shadow: 0px 0px 10px rgba( 0, 0, 0, 0.4 );
+
+    -webkit-transform-origin: 0px 0px;
+       -moz-transform-origin: 0px 0px;
+        -ms-transform-origin: 0px 0px;
+         -o-transform-origin: 0px 0px;
+            transform-origin: 0px 0px;
+  }
+
+
+.forkit-curtain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+}
+
+footer .github {
+  background: url(github.png) no-repeat;
+  width: 72px;
+  height: 36px;
+  text-indent: -999em;
+  position: absolute;
+  bottom: 30px; right: 0;
+}
+
+/*** Bootstrap customization ***/
+.btn-yellow{
+  color: #3C382B;
+  text-shadow: 0 -1px 0 rgba(255, 243, 185, 0.25);
+  background-color: #FAF232;
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#FBB450),to(#F89406));
+  background-image: -webkit-linear-gradient(top,#FBE650,#F8C806);
+  background-image: -o-linear-gradient(top,#FBB450,#F89406);
+  background-image: linear-gradient(to bottom,#FBB450,#F89406);
+  background-image: -moz-linear-gradient(top,#FBB450,#F89406);
+  background-repeat: repeat-x;
+  border-color: #DBF806 #EEF806 #ADA604;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#FBB450',endColorstr='#F89406',GradientType=0);
+  filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+.btn-yellow:hover,
+.btn-yellow:active,
+.btn-yellow.active,
+.btn-yellow.disabled,
+.btn-yellow[disabled] {
+  color: #ffffff;
+  background-color: #f8c807;
+  *background-color: #f8c807;
+}
+
+.btn-yellow:active,
+.btn-yellow.active {
+  background-color: #f8c807 \9;
+}
